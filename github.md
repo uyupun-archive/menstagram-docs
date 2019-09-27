@@ -1,6 +1,4 @@
-# GitHub運用手順
-
-### 各リポジトリについて
+# 各リポジトリについて
 
 |リポジトリ名|説明|
 |:--|:--|
@@ -10,7 +8,7 @@
 |[menstagram-infra](https://github.com/uyupun/menstagram-infra)|Menstagramの本番環境のインフラ設定. Kubernetes製|
 |[menstagram-ai](https://github.com/uyupun/menstagram-ai)|Menstagramのラーメン判定の実装. Keras製|
 
-### ブランチの運用方法について
+# ブランチの運用方法について
 - `feature-XXXX` (XXXXはissue番号)という名前のブランチを切り、その中で作業を行う
 - 必ずPullRequestを出す(直Pushしない)
 - PullRequest先はdevelopブランチ(masterブランチには投げない)
