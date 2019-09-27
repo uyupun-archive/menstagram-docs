@@ -1,3 +1,12 @@
+# メンバー
+
+- [たかし](https://github.com/takashi0602)
+- [かっきー](https://github.com/NNN-kakimoto)
+- [かずきち](https://github.com/tyokinuhata)
+- [むらとお](https://github.com/murakami1618)
+- [スズキ](https://github.com/suzuking1125)
+- [マル](https://github.com/b7026)
+
 # チーム
 
 |チーム|メンバー|

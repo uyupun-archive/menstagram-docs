@@ -1,5 +1,5 @@
 # Menstagram
-**🍜 SUSURU FOREVER, SUSURU ANIWHARE 🍜**
+**🍜 SUSURU FOREVER, SUSURU ANIWHERE 🍜**
 
 Menstagramは世界中のラーメンコミュニティを支える新感覚SNSです。
 
