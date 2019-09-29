@@ -19,7 +19,7 @@
 
 ### インフラ
 - Docker
-- Docker Compose(開発環境))
+- Docker Compose(開発環境)
 - Kubernetes(本番環境)
 - GitHub Actions(CI/CD)
 
