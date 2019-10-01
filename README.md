@@ -13,7 +13,7 @@ Menstagramは世界中のラーメンコミュニティを支える新感覚SNS�
 |[github.md](./github.md)|GitHubの情報と運用手順|
 |[ストーリーボード](https://github.com/orgs/uyupun/projects/1)|ストーリーボード|
 |[terms.md](./terms.md)|用語集|
-|[カンプ]()|カンプ(XD)|
+|[カンプ](https://xd.adobe.com/view/e5c751bc-1938-407b-588c-887c79d1e489-93f6/)|カンプ(XD)|
 |[api-design.md](./api-design.md)|API設計|
 |[db-design.md](./db-design.md)|DB設計|
 
