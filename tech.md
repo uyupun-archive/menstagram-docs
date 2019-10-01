@@ -33,4 +33,4 @@
 
 # 技術構成
 
-[](./tech/diagram.png)
+<img src="./tech/diagram.png" width="500">
