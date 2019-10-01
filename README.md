@@ -1,7 +1,7 @@
 # Menstagram
 **🍜 SUSURU FOREVER, SUSURU ANYWHERE 🍜**
 
-Menstagramは世界中のラーメンコミュニティを支える新感覚SNSです。
+Menstagramは世界中のラーメンコミュニティを支える特化型SNSです。
 
 ### ドキュメント
 
