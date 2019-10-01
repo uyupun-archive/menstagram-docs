@@ -32,3 +32,5 @@
 - GitHub
 
 # 技術構成
+
+[](./tech/diagram.png)
