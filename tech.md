@@ -49,4 +49,4 @@
 
 # 技術構成
 
-<img src="./tech/diagram.png" width="700">
+<img src="./images/tech/diagram.png" width="700">
