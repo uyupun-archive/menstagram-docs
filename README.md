@@ -16,6 +16,7 @@ Menstagramは世界中のラーメンコミュニティを支える特化型SNS�
 |[terms.md](./terms.md)|用語集|
 |[comps](https://xd.adobe.com/view/e5c751bc-1938-407b-588c-887c79d1e489-93f6/)|カンプ(XD)|
 |[theme.md](./theme.md)|テーマカラー一覧|
+|[routes.md](./routes.md)|画面のパス一覧|
 |[api-design.md](./api-design.md)|API設計|
 |[db-design.md](./db-design.md)|DB設計|
 
