@@ -29,3 +29,23 @@
 
 
 ## likes
+投稿いいね
+|カラム名|型|属性|説明|
+|:--|:--|:--|:--|
+|id|bigIncrements|-|数値のID. ユーザーによる変更が不可|
+|user_id|unsigned int|references|いいねしたユーザーのID|
+|post_id|unsigned int|references|いいねする投稿のID|
+|created_at|timestamps|-|作成された日付. Laravelによってデフォルトで生成される|
+|updated_at|timestamps|-|更新された日付. Laravelによってデフォルトで生成される|
+
+## Notices
+通知
+|カラム名|型|属性|説明|
+|:--|:--|:--|:--|
+|id|bigIncrements|-|数値のID. ユーザーによる変更が不可|
+|user_id|unsigned int|references|通知送り先のユーザーID|
+|type|integer|-|通知の種類|
+|from_user_id|unsigned int|references|通知送信元のユーザーID|
+|text|text|-|通知内容の文章|
+|created_at|timestamps|-|作成された日付. Laravelによってデフォルトで生成される|
+|updated_at|timestamps|-|更新された日付. Laravelによってデフォルトで生成される|
