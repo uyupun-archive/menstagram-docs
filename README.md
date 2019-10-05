@@ -14,7 +14,7 @@ Menstagramは世界中のラーメンコミュニティを支える特化型SNS�
 |[schedule.md](./schedule.md)|開発スケジュール|
 |[projects](https://github.com/orgs/uyupun/projects/1)|ストーリーボード|
 |[terms.md](./terms.md)|用語集|
-|[comps](https://xd.adobe.com/view/e5c751bc-1938-407b-588c-887c79d1e489-93f6/)|カンプ(XD)|
+|[comps](https://xd.adobe.com/spec/416488c6-96ec-4da3-58c6-dda1d76eb70a-3755/grid/)|カンプ(XD)|
 |[theme.md](./theme.md)|テーマカラー一覧|
 |[routes.md](./routes.md)|画面のパス一覧|
 |[api-design.md](./api-design.md)|API設計|
