@@ -19,4 +19,4 @@ Menstagramは世界中のラーメンコミュニティを支える特化型SNS�
 |[api-design.md](./api-design.md)|API設計|
 |[db-design.md](./db-design.md)|DB設計|
 
-※ 用語集、カンプ、API設計、DB設計に関しては未完成
+※ カンプ、API設計、DB設計に関しては未完成
