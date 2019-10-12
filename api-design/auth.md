@@ -8,6 +8,25 @@
 POST /api/v1/user/register
 ```
 
+##### Request
+
+```json
+{
+    "screen_name": "XXXXX",
+    "user_id": "XXXXX",
+    "email": "XXXXX",
+    "password": "XXXXX"
+}
+```
+
+##### Response
+
+```json
+{
+    "access_token": "XXXXX"
+}
+```
+
 ### 一般ユーザーログイン
 
 ##### Endpoint
@@ -16,12 +35,38 @@ POST /api/v1/user/register
 POST /api/v1/user/login
 ```
 
+##### Request
+
+```json
+{
+    "user_id": "XXXXX",
+    "password": "XXXXX"
+}
+```
+
+##### Response
+
+```json
+{
+    "access_token": "XXXXX"
+}
+```
+
 ### 一般ユーザーログアウト
 
 ##### Endpoint
 
 ```
 POST /api/v1/user/logout
+```
+
+##### Request
+
+```json
+{
+    "user_id": "XXXXX",
+    "password": "XXXXX"
+}
 ```
 
 ### 管理ユーザー登録
