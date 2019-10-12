@@ -117,3 +117,7 @@
 |deleted_at|timestamp|-|nullable|退会した日付(論理削除)|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
+
+
+# E-R図
+<img src="./images/db-design/E-Rdiagram.png" width="700">
