@@ -10,12 +10,12 @@
 |user_id|string|16|unique|ユーザーが任意に設定できるID. 半角英数字のみ|
 |email|string|256|unique|ユーザーのメールアドレス|
 |password|string|-|-|bcryptによってハッシュ化されたパスワード|
-|avatar|string|-|-|ユーザーのアイコン画像のパス|
-|biography|string|128|-|ユーザーの自己紹介欄|
+|avatar|string|-|default(デフォルトアイコンのパス)|ユーザーのアイコン画像のパス|
+|biography|string|128|nullable|ユーザーの自己紹介欄|
 |access_token|string|-|nullable|アクセストークン|
-|posted|unsignedBigInteger|-|-|投稿数|
-|following|unsignedBigInteger|-|-|フォロー数|
-|followed|unsignedBigInteger|-|-|フォロワー数|
+|posted|unsignedBigInteger|-|default(0)|投稿数|
+|following|unsignedBigInteger|-|default(0)|フォロー数|
+|followed|unsignedBigInteger|-|default(0)|フォロワー数|
 |deleted_at|timestamp|-|nullable|退会した日付(論理削除)|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
