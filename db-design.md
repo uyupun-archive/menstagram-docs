@@ -44,6 +44,7 @@
 |user_id|unsignedBigInteger|-|references|ユーザーID|
 |text|string|256|-|投稿内容(テキスト)|
 |images|json|-|-|投稿内容(画像)のパス. 最大４枚のためJSONとして持つ|
+|liked|unsignedBigInteger|-|default(0)|いいね数|
 |deleted_at|timestamp|-|nullable|退会した日付(論理削除)|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|

@@ -243,3 +243,90 @@ PATCH /api/v1/user/profile
 ```json
 {}
 ```
+
+### ログインユーザーの投稿の取得
+
+##### Endpoint
+
+```
+GET /api/v1/user/posts
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+[
+    {
+        "id": 1,
+        "text": "XXXX",
+        "images": [
+            "XXXX", "XXXX", "XXXX", "XXXX"
+        ],
+        "liked": 1
+    }
+]
+```
+
+### 特定のユーザーの投稿の取得
+
+##### Endpoint
+
+```
+GET /api/v1/user/posts?user_id=XXXX
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+[
+    {
+        "id": 1,
+        "text": "XXXX",
+        "images": [
+            "XXXX", "XXXX", "XXXX", "XXXX"
+        ],
+        "liked": 1
+    }
+]
+```
+
+### ログインユーザーがいいねした投稿の取得
+
+##### Endpoint
+
+```
+GET /api/v1/user/likes
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+[
+    {
+        "id": 1,
+        "text": "XXXX",
+        "images": [
+            "XXXX", "XXXX", "XXXX", "XXXX"
+        ],
+        "liked": 1
+    }
+]
+```
