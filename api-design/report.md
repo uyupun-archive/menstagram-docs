@@ -5,5 +5,19 @@
 ##### Endpoint
 
 ```
-GET /api/v1/report/not-ramen
+POST /api/v1/report/not-ramen
+```
+
+##### Request
+
+```json
+{
+    "post_id": "XXXX"
+}
+```
+
+##### Response
+
+```json
+{}
 ```
