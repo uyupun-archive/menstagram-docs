@@ -13,6 +13,9 @@
 |avatar|string|-|-|ユーザーのアイコン画像のパス|
 |biography|string|128|-|ユーザーの自己紹介欄|
 |access_token|string|-|nullable|アクセストークン|
+|posted|unsignedBigInteger|-|-|投稿数|
+|following|unsignedBigInteger|-|-|フォロー数|
+|followed|unsignedBigInteger|-|-|フォロワー数|
 |deleted_at|timestamp|-|nullable|退会した日付(論理削除)|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
