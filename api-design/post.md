@@ -8,12 +8,49 @@
 POST /api/v1/post
 ```
 
-### 特定のユーザの投稿を取得する
+##### Request
+
+```json
+{
+    "text": "XXXX",
+    "images": [
+        "XXXX", "XXXX", "XXXX", "XXXX"
+    ]
+}
+```
+
+##### Response
+
+```json
+{}
+```
+
+### 特定のユーザーの投稿を取得する
 
 ##### Endpoint
 
 ```
-GET /api/v1/posts?user_id=XXXX
+GET /api/v1/post?user_id=XXXX
+```
+
+##### Request
+
+```json
+```
+
+##### Response
+
+```json
+[
+    {
+        "id": 1,
+        "text": "XXXX",
+        "images": [
+            "XXXX", "XXXX", "XXXX", "XXXX"
+        ],
+        "likes": 1
+    }
+]
 ```
 
 ### いいね
@@ -21,7 +58,19 @@ GET /api/v1/posts?user_id=XXXX
 ##### Endpoint
 
 ```
-GET /api/v1/posts/like
+POST /api/v1/post/like
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+{}
 ```
 
 ### 投稿詳細の取得
@@ -29,5 +78,33 @@ GET /api/v1/posts/like
 ##### Endpoint
 
 ```
-GET /api/v1/posts
+GET /api/v1/post?post_id=XXXX
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+[
+    {
+        "id": 1,
+        "text": "XXXX",
+        "images": [
+            "XXXX", "XXXX", "XXXX", "XXXX"
+        ],
+        "likes": [
+            {
+                "user_id": "XXXX"
+            },
+            {
+                "user_id": "XXXX"
+            }
+        ]
+    }
+]
 ```
