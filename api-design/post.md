@@ -45,6 +45,46 @@ POST /api/v1/post/like
 {}
 ```
 
+### グローバルタイムラインの取得
+
+##### Endpoint
+
+```
+/api/v1/post/tl/global
+```
+
+##### Request
+
+```json
+
+```
+
+##### Response
+
+```json
+
+```
+
+### プライベートタイムラインの取得
+
+##### Endpoint
+
+```
+/api/v1/post/tl/private
+```
+
+##### Request
+
+```json
+
+```
+
+##### Response
+
+```json
+
+```
+
 ### 特定のユーザーの投稿の取得
 
 ##### Endpoint

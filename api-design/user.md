@@ -5,7 +5,28 @@
 ##### Endpoint
 
 ```
-GET /api/v1/user/profile
+GET /api/v1/user/profile/XXXX
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+{
+    "id": 1,
+    "avatar": "XXXX",
+    "screen_name": "XXXX",
+    "user_id": "XXXX",
+    "posted": 1,
+    "following": 1,
+    "followed": 1,
+    "biography": "XXXX"
+}
 ```
 
 ### フォローの取得
@@ -13,7 +34,30 @@ GET /api/v1/user/profile
 ##### Endpoint
 
 ```
-GET /api/v1/user/following
+GET /api/v1/user/following/XXXX
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+[
+    {
+        "user_id": "XXXX",
+        "screen_name": "XXXX",
+        "avater": "XXXX"
+    },
+    {
+        "user_id": "XXXX",
+        "screen_name": "XXXX",
+        "avater": "XXXX"
+    }
+]
 ```
 
 ### フォロワーの取得
@@ -21,7 +65,30 @@ GET /api/v1/user/following
 ##### Endpoint
 
 ```
-GET /api/v1/user/followed
+GET /api/v1/user/followed/XXXX
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+[
+    {
+        "user_id": "XXXX",
+        "screen_name": "XXXX",
+        "avater": "XXXX"
+    },
+    {
+        "user_id": "XXXX",
+        "screen_name": "XXXX",
+        "avater": "XXXX"
+    }
+]
 ```
 
 ### フォローする
@@ -29,7 +96,19 @@ GET /api/v1/user/followed
 ##### Endpoint
 
 ```
-GET /api/v1/user/follow
+POST /api/v1/user/follow
+```
+
+##### Request
+
+```json
+{}
+```
+
+##### Response
+
+```json
+{}
 ```
 
 ### フォローをはずす
@@ -37,7 +116,17 @@ GET /api/v1/user/follow
 ##### Endpoint
 
 ```
-GET /api/v1/user/unfollow
+POST /api/v1/user/unfollow
+```
+
+```json
+{}
+```
+
+##### Response
+
+```json
+{}
 ```
 
 ### プロフィールを編集する
@@ -45,5 +134,20 @@ GET /api/v1/user/unfollow
 ##### Endpoint
 
 ```
-GET /api/v1/user/profile/edit
+POST /api/v1/user/profile/edit
+```
+
+##### Request
+
+```json
+{
+    "screen_name": "XXXX",
+    "biography": "XXXX"
+}
+```
+
+##### Response
+
+```json
+{}
 ```
