@@ -18,6 +18,14 @@ GET /api/v1/notice/liked
 {}
 ```
 
+- 指定したIDから10件のいいね通知を取得する
+
+```json
+{
+    "like_notice_id": 1
+}
+```
+
 ##### Response
 
 ```json
@@ -54,6 +62,14 @@ GET /api/v1/notice/followed
 {}
 ```
 
+- 指定したIDから10件のフォロー通知を取得する
+
+```json
+{
+    "follow_notice_id": 1
+}
+```
+
 ##### Response
 
 ```json
@@ -86,7 +102,7 @@ GET /api/v1/notice/system
 {}
 ```
 
-- 指定したID
+- 指定したIDから10件の運営からの通知を取得する
 
 ```json
 {
