@@ -87,3 +87,53 @@ GET /api/v1/post/detail
     }
 ]
 ```
+
+### いいねした人一覧の取得
+
+##### Endpoint
+
+```
+GET /api/v1/post/liker
+```
+
+##### Request
+
+```json
+{
+    "post_id": 1
+}
+```
+
+- 取得する範囲を指定する  
+20〜29件目までを取得する
+
+```json
+{
+    "post_id": 1,
+    "page": 2
+}
+```
+
+- 取得する個数を指定する
+
+```json
+{
+    "post_id": 1,
+    "take": 5
+}
+```
+
+##### Response
+
+```json
+[
+    {
+        "id": 1,
+        "user": {
+            "id": 1,
+            "screen_name": "XXXX",
+            "avater": "XXXX"
+        }
+    }
+]
+```
