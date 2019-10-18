@@ -83,7 +83,9 @@ GET /api/v1/post/detail
             {
                 "user_id": "XXXX"
             }
-        ]
+        ],
+        "created_at": "XXXX",
+        "updated_at": "XXXX"
     }
 ]
 ```

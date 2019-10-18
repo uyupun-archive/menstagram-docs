@@ -25,6 +25,8 @@
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
         "liked": 1,
+        "created_at": "XXXX",
+        "updated_at": "XXXX"
     }
 ]
 ```
@@ -56,6 +58,8 @@
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
         "liked": 1,
+        "created_at": "XXXX",
+        "updated_at": "XXXX"
     }
 ]
 ```

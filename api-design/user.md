@@ -287,7 +287,9 @@ GET /api/v1/user/likes
         "images": [
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
-        "liked": 1
+        "liked": 1,
+        "created_at": "XXXX",
+        "updated_at": "XXXX"
     }
 ]
 ```
