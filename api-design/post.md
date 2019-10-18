@@ -10,6 +10,8 @@ POST /api/v1/post
 
 ##### Request
 
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+
 ```json
 {
     "text": "XXXX",
@@ -35,6 +37,8 @@ POST /api/v1/post/like
 
 ##### Request
 
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+
 ```json
 {}
 ```
@@ -50,13 +54,15 @@ POST /api/v1/post/like
 ##### Endpoint
 
 ```
-GET /api/v1/post/detail?post_id=XXXX
+GET /api/v1/post/detail
 ```
 
 ##### Request
 
 ```json
-{}
+{
+    "post_id": 1
+}
 ```
 
 ##### Response
