@@ -86,6 +86,14 @@ GET /api/v1/notice/system
 {}
 ```
 
+- 指定したID
+
+```json
+{
+    "system_notice_id": 1
+}
+```
+
 ##### Response
 
 ```json
