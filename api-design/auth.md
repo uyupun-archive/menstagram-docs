@@ -56,6 +56,8 @@ POST /api/v1/user/login
 
 ##### Endpoint
 
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+
 ```
 POST /api/v1/user/logout
 ```

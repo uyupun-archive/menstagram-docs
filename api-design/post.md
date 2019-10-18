@@ -10,6 +10,8 @@ POST /api/v1/post
 
 ##### Request
 
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+
 ```json
 {
     "text": "XXXX",
@@ -35,6 +37,8 @@ POST /api/v1/post/like
 
 ##### Request
 
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+
 ```json
 {}
 ```
@@ -50,13 +54,15 @@ POST /api/v1/post/like
 ##### Endpoint
 
 ```
-GET /api/v1/post/detail?post_id=XXXX
+GET /api/v1/post/detail
 ```
 
 ##### Request
 
 ```json
-{}
+{
+    "post_id": 1
+}
 ```
 
 ##### Response
@@ -77,7 +83,59 @@ GET /api/v1/post/detail?post_id=XXXX
             {
                 "user_id": "XXXX"
             }
-        ]
+        ],
+        "created_at": "XXXX",
+        "updated_at": "XXXX"
+    }
+]
+```
+
+### いいねした人一覧の取得
+
+##### Endpoint
+
+```
+GET /api/v1/post/liker
+```
+
+##### Request
+
+```json
+{
+    "post_id": 1
+}
+```
+
+- 取得する範囲を指定する  
+20〜29件目までを取得する
+
+```json
+{
+    "post_id": 1,
+    "page": 2
+}
+```
+
+- 取得する個数を指定する
+
+```json
+{
+    "post_id": 1,
+    "take": 5
+}
+```
+
+##### Response
+
+```json
+[
+    {
+        "id": 1,
+        "user": {
+            "id": 1,
+            "screen_name": "XXXX",
+            "avater": "XXXX"
+        }
     }
 ]
 ```

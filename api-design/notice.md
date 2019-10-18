@@ -10,14 +10,38 @@ GET /api/v1/notice/liked
 
 ##### Request
 
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+
+- 最新10件のいいね通知を取得する
+
 ```json
 {}
+```
+
+- 指定したIDから10件のいいね通知を取得する
+
+```json
+{
+    "like_notice_id": 1
+}
 ```
 
 ##### Response
 
 ```json
-
+[
+    {
+        "id": 1,
+        "src_user": {
+            "id": 1,
+            "avater": "XXXX"
+        },
+        "post": {
+            "id": 1,
+            "image": "XXXX"
+        }
+    }
+]
 ```
 
 ### フォロー通知
@@ -30,14 +54,34 @@ GET /api/v1/notice/followed
 
 ##### Request
 
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+
+- 最新10件のフォロー通知を取得する
+
 ```json
 {}
+```
+
+- 指定したIDから10件のフォロー通知を取得する
+
+```json
+{
+    "follow_notice_id": 1
+}
 ```
 
 ##### Response
 
 ```json
-
+[
+    {
+        "id": 1,
+        "src_user": {
+            "id": 1,
+            "avater": "XXXX"
+        }
+    }
+]
 ```
 
 ### 運営からの通知
@@ -50,12 +94,29 @@ GET /api/v1/notice/system
 
 ##### Request
 
-```json
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
 
+- 最新10件の運営からの通知を取得する
+
+```json
+{}
+```
+
+- 指定したIDから10件の運営からの通知を取得する
+
+```json
+{
+    "system_notice_id": 1
+}
 ```
 
 ##### Response
 
 ```json
-
+[
+    {
+        "id": 1,
+        "text": "XXXX",
+    }
+]
 ```
