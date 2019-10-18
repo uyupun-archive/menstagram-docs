@@ -77,7 +77,9 @@
 |:--|:--|:--|:--|:--|
 |id|increments|-|primary|数値のID. ユーザーによる変更が不可|
 |like_id|unsignedBigInteger|-|references|対象となるいいねのID|
+|post_id|unsignedBigInteger|-|references|対象となる投稿のID|
 |target_user_id|unsignedBigInteger|-|references|通知の送信先ユーザーID|
+|read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
@@ -89,6 +91,7 @@
 |id|increments|-|primary|数値のID. ユーザーによる変更が不可|
 |follow_id|unsignedBigInteger|-|references|対象となるフォローのID|
 |target_user_id|unsignedBigInteger|-|references|通知の送信先ユーザーID|
+|read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
@@ -100,6 +103,7 @@
 |id|increments|-|primary|数値のID. ユーザーによる変更が不可|
 |text|string|256|-|送信内容|
 |target_user_id|unsignedBigInteger|-|references, nullable|対象となるユーザーID. ただし運営からの通知はブロードキャストが基本なので基本的に使用しない|
+|read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
