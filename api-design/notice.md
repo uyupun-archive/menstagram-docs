@@ -24,7 +24,7 @@ GET /api/v1/notice/liked
 [
     {
         "id": 1,
-        "target_user": {
+        "src_user": {
             "id": 1,
             "avater": "XXXX"
         },
@@ -51,7 +51,7 @@ GET /api/v1/notice/followed
 - 最新10件のフォロー通知を取得する
 
 ```json
-
+{}
 ```
 
 ##### Response
@@ -60,7 +60,7 @@ GET /api/v1/notice/followed
 [
     {
         "id": 1,
-        "target_user": {
+        "src_user": {
             "id": 1,
             "avater": "XXXX"
         }
