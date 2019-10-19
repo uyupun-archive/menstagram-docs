@@ -24,7 +24,9 @@ POST /api/v1/post
 ##### Response
 
 ```json
-{}
+{
+    "can_post": true
+}
 ```
 
 ### いいね
@@ -78,10 +80,12 @@ GET /api/v1/post/detail
         "liked": 1,
         "liker": [
             {
-                "user_id": "XXXX"
+                "user_id": "XXXX",
+                "avatar": "XXXX"
             },
             {
-                "user_id": "XXXX"
+                "user_id": "XXXX",
+                "avatar": "XXXX"
             }
         ],
         "created_at": "XXXX",
@@ -132,10 +136,16 @@ GET /api/v1/post/liker
     {
         "id": 1,
         "user": {
-            "id": 1,
+            "user_id": "XXXX",
             "screen_name": "XXXX",
             "avater": "XXXX"
         }
     }
 ]
 ```
+
+### ラーメン判定
+
+投稿APIが内部的に使用する
+
+// TODO

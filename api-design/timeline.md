@@ -24,6 +24,11 @@
         "images": [
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
+        "user": {
+            "user_id": "XXXX",
+            "screen_name": "XXXX",
+            "avatar": "XXXX"
+        },
         "liked": 1,
         "created_at": "XXXX",
         "updated_at": "XXXX"
@@ -57,6 +62,11 @@
         "images": [
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
+        "user": {
+            "user_id": "XXXX",
+            "screen_name": "XXXX",
+            "avatar": "XXXX"
+        },
         "liked": 1,
         "created_at": "XXXX",
         "updated_at": "XXXX"

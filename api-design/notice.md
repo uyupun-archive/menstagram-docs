@@ -33,12 +33,16 @@ GET /api/v1/notice/liked
     {
         "id": 1,
         "src_user": {
-            "id": 1,
+            "user_id": "XXXX",
+            "screen_name": "XXXX",
             "avater": "XXXX"
         },
         "post": {
             "id": 1,
             "image": "XXXX"
+        },
+        "like": {
+            "created_at": "XXXX"
         }
     }
 ]
@@ -77,8 +81,13 @@ GET /api/v1/notice/followed
     {
         "id": 1,
         "src_user": {
-            "id": 1,
+            "user_id": "XXXX",
+            "screen_name": "XXXX",
             "avater": "XXXX"
+        },
+        "follow": {
+            "is_followed": false,
+            "created_at": "XXXX"
         }
     }
 ]
@@ -117,6 +126,7 @@ GET /api/v1/notice/system
     {
         "id": 1,
         "text": "XXXX",
+        "created_at": "XXXX"
     }
 ]
 ```

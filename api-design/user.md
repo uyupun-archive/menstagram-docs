@@ -36,6 +36,7 @@ GET /api/v1/user/profile
     "posted": 1,
     "following": 1,
     "followed": 1,
+    "is_followed": false,
     "biography": "XXXX"
 }
 ```
@@ -82,12 +83,14 @@ GET /api/v1/user/following
     {
         "user_id": "XXXX",
         "screen_name": "XXXX",
-        "avater": "XXXX"
+        "avater": "XXXX",
+        "is_follwed": true
     },
     {
         "user_id": "XXXX",
         "screen_name": "XXXX",
-        "avater": "XXXX"
+        "avater": "XXXX",
+        "is_follwed": true
     }
 ]
 ```
@@ -134,12 +137,14 @@ GET /api/v1/user/followed
     {
         "user_id": "XXXX",
         "screen_name": "XXXX",
-        "avater": "XXXX"
+        "avater": "XXXX",
+        "is_follwed": false
     },
     {
         "user_id": "XXXX",
         "screen_name": "XXXX",
-        "avater": "XXXX"
+        "avater": "XXXX",
+        "is_follwed": false
     }
 ]
 ```
@@ -157,7 +162,9 @@ POST /api/v1/user/follow
 ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
 
 ```json
-{}
+{
+    "user_id": "XXXX"
+}
 ```
 
 ##### Response
@@ -175,7 +182,9 @@ POST /api/v1/user/unfollow
 ```
 
 ```json
-{}
+{
+    "user_id": "XXXX"
+}
 ```
 
 ##### Response
