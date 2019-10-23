@@ -29,7 +29,7 @@ POST /api/v1/post
 }
 ```
 
-### いいね
+### いいねする
 
 ##### Endpoint
 
@@ -48,6 +48,28 @@ POST /api/v1/post/like
 ##### Response
 
 ```json
+{}
+```
+
+### いいねをはずす
+
+##### Endpoint
+
+```
+POST /api/v1/post/unlike
+```
+
+##### Request
+
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+
+```json
+{}
+```
+
+##### Response
+
+```
 {}
 ```
 
