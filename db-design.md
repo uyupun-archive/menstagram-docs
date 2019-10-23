@@ -80,7 +80,7 @@
 |post_id|unsignedBigInteger|-|references|対象となる投稿のID|
 |src_user_id|unsignedBigInteger|-|references|通知の送信元ユーザーID|
 |dest_user_id|unsignedBigInteger|-|references|通知の送信先ユーザーID|
-|read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
+|is_read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
@@ -93,18 +93,41 @@
 |follow_id|unsignedBigInteger|-|references|対象となるフォローのID|
 |src_user_id|unsignedBigInteger|-|references|通知の送信元ユーザーID|
 |dest_user_id|unsignedBigInteger|-|references|通知の送信先ユーザーID|
-|read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
+|is_read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
-### system_notices
-- 運営からの通知
+### system_notice_contents
+- 運営からのブロードキャスト通知の本文
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
 |id|increments|-|primary|数値のID. ユーザーによる変更が不可|
 |text|string|256|-|送信内容|
-|read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
+|created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
+|updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
+
+### system_notice_users
+- 運営ブロードキャスト通知の既読管理
+
+|カラム名|型|長さ|属性|説明|
+|:--|:--|:--|:--|:--|
+|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|system_notice_content_id|unsignedBigInteger|-|references|通知内容のID|
+|dest_user_id|unsignedBigInteger|-|references|通知の送信先ユーザーID|
+|is_read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
+|created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
+|updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
+
+### rejected_notice
+- システムによって投稿が削除されたことを通知
+
+|カラム名|型|長さ|属性|説明|
+|:--|:--|:--|:--|:--|
+|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|post_id|unsignedBigInteger|references|対象となる投稿のID|
+|dest_user_id|unsignedBigInteger|-|references|通知の送信先ユーザーID|
+|is_read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
