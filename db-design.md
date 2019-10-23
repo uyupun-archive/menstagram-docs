@@ -70,6 +70,18 @@
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
+### system_post_checks
+- ユーザーから報告された投稿の削除
+
+|カラム名|型|長さ|属性|説明|
+|:--|:--|:--|:--|:--|
+|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|post_id|unsignedBigInteger|references|対象となる投稿のID|
+|status|string|16|-|承認の状態. YET(まだ)/REJECT(拒否された)/ACCEPT(受理された)|
+|type|string|16|-|報告の種類. 今後の拡張性を考えて持たせてある|
+|created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
+|updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
+
 ### like_notices
 - いいねの通知
 
@@ -119,7 +131,7 @@
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
-### rejected_notice
+### rejected_post_notice
 - システムによって投稿が削除されたことを通知
 
 |カラム名|型|長さ|属性|説明|
@@ -130,19 +142,6 @@
 |is_read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
-
-### system_ramen_checks
-- ユーザーから報告されたラーメン画像じゃないよ報告の承認
-
-|カラム名|型|長さ|属性|説明|
-|:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
-|post_id|unsignedBigInteger|references|対象となる投稿のID|
-|status|string|16|-|承認の状態. YET(まだ)/REJECT(拒否された)/ACCEPT(受理された)|
-|type|string|16|-|報告の種類. 今後の拡張性を考えて持たせてある|
-|created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
-|updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
-
 
 # ER図
 
