@@ -5,7 +5,7 @@
 ##### Endpoint
 
 ```
-POST /api/v1/user/register
+POST /api/v1/auth/register
 ```
 
 ##### Request
@@ -32,7 +32,7 @@ POST /api/v1/user/register
 ##### Endpoint
 
 ```
-POST /api/v1/user/login
+POST /api/v1/auth/login
 ```
 
 ##### Request
@@ -59,7 +59,7 @@ POST /api/v1/user/login
 ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
 
 ```
-POST /api/v1/user/logout
+POST /api/v1/auth/logout
 ```
 
 ##### Request
