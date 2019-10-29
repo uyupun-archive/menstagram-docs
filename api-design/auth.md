@@ -65,10 +65,13 @@ POST /api/v1/user/logout
 ##### Request
 
 ```json
-{
-    "user_id": "XXXXX",
-    "password": "XXXXX"
-}
+{}
+```
+
+##### Response
+
+```json
+{}
 ```
 
 ### 管理ユーザー登録
