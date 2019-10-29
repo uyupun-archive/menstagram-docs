@@ -16,7 +16,7 @@
 |posted|unsignedBigInteger|-|default(0)|投稿数|
 |following|unsignedBigInteger|-|default(0)|フォロー数|
 |followed|unsignedBigInteger|-|default(0)|フォロワー数|
-|deleted_at|timestamp|-|nullable|退会した日付(論理削除)|
+|deleted_at|softDeletes|-|-|退会した日付(論理削除)|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
 
