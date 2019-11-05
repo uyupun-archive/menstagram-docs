@@ -25,7 +25,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. システムによる自動割り当て|
+|id|bigIncrements|-|primary|数値のID. システムによる自動割り当て|
 |screen_name|string|16|-|ユーザー表示名. 日本語可|
 |user_id|string|16|unique|ユーザーが任意に設定できるID. 半角英数字のみ|
 |email|string|256|unique|ユーザーのメールアドレス|
@@ -40,7 +40,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |user_id|unsignedBigInteger|-|references|ユーザーID|
 |text|string|256|-|投稿内容(テキスト)|
 |images|json|-|-|投稿内容(画像)のパス. 最大４枚のためJSONとして持つ|
@@ -53,7 +53,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |user_id|unsignedBigInteger|-|references|フォローするユーザーのID|
 |target_user_id|unsignedBigInteger|-|references|フォロー対象のユーザーID|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
@@ -64,7 +64,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |user_id|unsignedBigInteger|-|references|いいねしたユーザーのID|
 |post_id|unsignedBigInteger|-|references|いいねする投稿のID|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
@@ -75,7 +75,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |post_id|unsignedBigInteger|references|対象となる投稿のID|
 |status|string|16|-|承認の状態. YET(まだ)/REJECT(拒否された)/ACCEPT(受理された)|
 |type|string|16|-|報告の種類. 今後の拡張性を考えて持たせてある|
@@ -87,7 +87,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |like_id|unsignedBigInteger|-|references|対象となるいいねのID|
 |post_id|unsignedBigInteger|-|references|対象となる投稿のID|
 |src_user_id|unsignedBigInteger|-|references|通知の送信元ユーザーID|
@@ -101,7 +101,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |follow_id|unsignedBigInteger|-|references|対象となるフォローのID|
 |src_user_id|unsignedBigInteger|-|references|通知の送信元ユーザーID|
 |dest_user_id|unsignedBigInteger|-|references|通知の送信先ユーザーID|
@@ -114,7 +114,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |text|string|256|-|送信内容|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
 |updated_at|timestamps|-|-|更新された日付. Laravelによってデフォルトで生成される|
@@ -124,7 +124,7 @@
 
 |カラム名|型|長さ|属性|説明|
 |:--|:--|:--|:--|:--|
-|id|increments|-|primary|数値のID. ユーザーによる変更が不可|
+|id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |post_id|unsignedBigInteger|references|対象となる投稿のID|
 |dest_user_id|unsignedBigInteger|-|references|通知の送信先ユーザーID|
 |is_read|boolean|-|default(false)|すでに読み込んだ通知かどうか|
