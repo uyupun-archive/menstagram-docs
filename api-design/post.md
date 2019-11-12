@@ -37,7 +37,7 @@ POST /api/v1/post
 ##### Endpoint
 
 ```
-POST /api/v1/post/media
+POST /api/v1/post/images
 ```
 
 ##### Request
