@@ -42,10 +42,16 @@ POST /api/v1/post/images
 
 ##### Request
 
-画像は最低１枚, 最大４枚含めることができる.
+画像は最低１枚, 最大４枚含めることができる.  
+`Content-Type` には `multipart/form-data` を指定する.
 
-```
-multipart/form-data
+```json
+{
+    "image1": <image-data>,
+    "image2": <image-data>,
+    "image3": <image-data>,
+    "image4": <image-data>
+}
 ```
 
 ##### Response
