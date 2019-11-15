@@ -140,17 +140,8 @@ GET /api/v1/post/detail
         "XXXX", "XXXX", "XXXX", "XXXX"
     ],
     "liked": 1,
-    "liker": [
-        {
-            "user_id": "XXXX",
-            "avatar": "XXXX"
-        },
-        {
-            "user_id": "XXXX",
-            "avatar": "XXXX"
-        }
-    ],
     "user": {
+        "id": 1,
         "user_id": "XXXX",
         "screen_name": "XXXX",
         "avatar": "XXXX",
