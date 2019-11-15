@@ -150,6 +150,11 @@ GET /api/v1/post/detail
             "avatar": "XXXX"
         }
     ],
+    "user": {
+        "user_id": "XXXX",
+        "screen_name": "XXXX",
+        "avatar": "XXXX",
+    },
     "created_at": "XXXX",
     "updated_at": "XXXX"
 }
