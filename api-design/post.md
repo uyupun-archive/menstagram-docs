@@ -25,9 +25,7 @@ POST /api/v1/post
 ##### Response
 
 ```json
-{
-    "can_posted": true
-}
+{}
 ```
 
 ### 画像送信
@@ -44,6 +42,16 @@ POST /api/v1/post/images
 
 画像は最低１枚, 最大４枚含めることができる.  
 `Content-Type` には `multipart/form-data` を指定する.
+
+- １枚のみのパターン
+
+```json
+{
+    "image1": <image-data>
+}
+```
+
+- ４枚のパターン
 
 ```json
 {
