@@ -43,7 +43,7 @@ POST /api/v1/post/images
 画像は最低１枚, 最大４枚含めることができる.  
 `Content-Type` には `multipart/form-data` を指定する.
 
-- １枚のみのパターン
+- １枚のパターン
 
 ```json
 {
@@ -133,28 +133,26 @@ GET /api/v1/post/detail
 ##### Response
 
 ```json
-[
-    {
-        "id": 1,
-        "text": "XXXX",
-        "images": [
-            "XXXX", "XXXX", "XXXX", "XXXX"
-        ],
-        "liked": 1,
-        "liker": [
-            {
-                "user_id": "XXXX",
-                "avatar": "XXXX"
-            },
-            {
-                "user_id": "XXXX",
-                "avatar": "XXXX"
-            }
-        ],
-        "created_at": "XXXX",
-        "updated_at": "XXXX"
-    }
-]
+{
+    "id": 1,
+    "text": "XXXX",
+    "images": [
+        "XXXX", "XXXX", "XXXX", "XXXX"
+    ],
+    "liked": 1,
+    "liker": [
+        {
+            "user_id": "XXXX",
+            "avatar": "XXXX"
+        },
+        {
+            "user_id": "XXXX",
+            "avatar": "XXXX"
+        }
+    ],
+    "created_at": "XXXX",
+    "updated_at": "XXXX"
+}
 ```
 
 ### いいねした人一覧の取得
