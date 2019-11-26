@@ -52,7 +52,7 @@
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
         "user": {
-            "user_id": "XXXX",
+            "id": "XXXX",
             "screen_name": "XXXX",
             "avatar": "XXXX"
         },
@@ -118,7 +118,7 @@
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
         "user": {
-            "user_id": "XXXX",
+            "id": "XXXX",
             "screen_name": "XXXX",
             "avatar": "XXXX"
         },
