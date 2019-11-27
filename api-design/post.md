@@ -1,8 +1,6 @@
 # 投稿系API
 
-### 投稿
-
-基本的に画像送信API(次節で説明)を使用して `post_id` を取得した場合のみしか使用できない.  
+### 画像投稿
 
 ##### Endpoint
 
@@ -13,33 +11,6 @@ POST /api/v1/post
 ##### Request
 
 ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須.  
-また, `post_id` には画像送信APIを使用して取得したIDを指定する.
-
-```json
-{
-    "post_id": 1,
-    "text": "XXXX"
-}
-```
-
-##### Response
-
-```json
-{}
-```
-
-### 画像送信
-
-画像投稿の場合, 投稿に先立って画像を送信する.
-
-##### Endpoint
-
-```
-POST /api/v1/post/images
-```
-
-##### Request
-
 画像は最低１枚, 最大４枚含めることができる.  
 `Content-Type` には `multipart/form-data` を指定する.
 
@@ -68,6 +39,34 @@ POST /api/v1/post/images
 {
     "post_id": 1
 }
+```
+
+### テキスト投稿
+
+テキストのみの投稿はできず, まずは画像投稿APIから `post_id` を得る必要がある.
+
+##### Endpoint
+
+```
+POST /api/v1/post/text
+```
+
+##### Request
+
+ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須.  
+また, `post_id` には画像投稿APIを使用して取得したIDを指定する.
+
+```json
+{
+    "post_id": 1,
+    "text": "XXXX"
+}
+```
+
+##### Response
+
+```json
+{}
 ```
 
 ### いいねする
