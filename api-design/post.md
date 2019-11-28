@@ -78,7 +78,9 @@ POST /api/v1/post/like
 ##### Request
 
 ```json
-{}
+{
+    "post_id": 1
+}
 ```
 
 ##### Response
@@ -98,7 +100,9 @@ POST /api/v1/post/unlike
 ##### Request
 
 ```json
-{}
+{
+    "post_id": 1
+}
 ```
 
 ##### Response
