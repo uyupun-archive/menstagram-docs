@@ -9,6 +9,7 @@ POST /api/v1/auth/register
 ```
 
 ##### Request
+アクセストークンを発行するAPIのため, 例外的にHTTPヘッダにアクセストークンを指定する必要がない.
 
 ```json
 {
@@ -36,6 +37,7 @@ POST /api/v1/auth/login
 ```
 
 ##### Request
+アクセストークンを発行するAPIのため, 例外的にHTTPヘッダにアクセストークンを指定する必要がない.
 
 ```json
 {
