@@ -10,8 +10,7 @@ GET /api/v1/user/profile
 
 ##### Request
 
-- ログインユーザーのプロフィールの取得  
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+- ログインユーザーのプロフィールの取得
 
 ```json
 {}
@@ -51,8 +50,7 @@ GET /api/v1/user/following
 
 ##### Request
 
-- ログインユーザーのフォロー一覧の取得  
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+- ログインユーザーのフォロー一覧の取得
 
 ```json
 {}
@@ -105,8 +103,7 @@ GET /api/v1/user/followed
 
 ##### Request
 
-- ログインユーザーのフォロワー一覧の取得  
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+- ログインユーザーのフォロワー一覧の取得
 
 ```json
 {}
@@ -159,8 +156,6 @@ POST /api/v1/user/follow
 
 ##### Request
 
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
-
 ```json
 {
     "user_id": "XXXX"
@@ -189,8 +184,6 @@ POST /api/v1/user/unfollow
 
 ##### Response
 
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
-
 ```json
 {}
 ```
@@ -204,8 +197,6 @@ PATCH /api/v1/user/profile
 ```
 
 ##### Request
-
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
 
 ```json
 {
@@ -230,8 +221,7 @@ GET /api/v1/user/posts
 
 ##### Request
 
-- ログインユーザーの投稿の取得  
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
+- ログインユーザーの投稿の取得
 
 ```json
 {}
@@ -279,8 +269,6 @@ GET /api/v1/user/likes
 ```
 
 ##### Request
-
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
 
 ```json
 {}

@@ -73,8 +73,6 @@
 
 ##### Request
 
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
-
 - 最新から32件の投稿を取得する
 
 ```json
