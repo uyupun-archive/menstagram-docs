@@ -10,7 +10,6 @@ POST /api/v1/post
 
 ##### Request
 
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須.  
 画像は最低１枚, 最大４枚含めることができる.  
 `Content-Type` には `multipart/form-data` を指定する.
 
@@ -53,7 +52,6 @@ POST /api/v1/post/text
 
 ##### Request
 
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須.  
 また, `post_id` には画像投稿APIを使用して取得したIDを指定する.
 
 ```json
@@ -79,8 +77,6 @@ POST /api/v1/post/like
 
 ##### Request
 
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
-
 ```json
 {}
 ```
@@ -100,8 +96,6 @@ POST /api/v1/post/unlike
 ```
 
 ##### Request
-
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
 
 ```json
 {}

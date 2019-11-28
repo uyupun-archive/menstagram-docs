@@ -10,8 +10,6 @@ GET /api/v1/notice/liked
 
 ##### Request
 
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
-
 - 最新10件のいいね通知を取得する
 
 ```json
@@ -57,8 +55,6 @@ GET /api/v1/notice/followed
 ```
 
 ##### Request
-
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
 
 - 最新10件のフォロー通知を取得する
 
