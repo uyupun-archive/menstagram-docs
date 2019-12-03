@@ -137,6 +137,7 @@ GET /api/v1/post/detail
         "XXXX", "XXXX", "XXXX", "XXXX"
     ],
     "liked": 1,
+    "is_liked": true,
     "user": {
         "id": 1,
         "user_id": "XXXX",
