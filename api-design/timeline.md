@@ -57,6 +57,7 @@
             "avatar": "XXXX"
         },
         "liked": 1,
+        "is_liked": true,
         "created_at": "XXXX",
         "updated_at": "XXXX"
     }
@@ -121,6 +122,7 @@
             "avatar": "XXXX"
         },
         "liked": 1,
+        "is_liked": true,
         "created_at": "XXXX",
         "updated_at": "XXXX"
     }
