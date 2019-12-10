@@ -144,7 +144,7 @@ GET /api/v1/post/detail
         "screen_name": "XXXX",
         "avatar": "XXXX",
     },
-    "likes": [
+    "liker": [
         {
             "user_id": 1,
             "avatar": "XXXX"

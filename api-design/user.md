@@ -269,9 +269,36 @@ GET /api/v1/user/likes
 ```
 
 ##### Request
+- 最新から32件の投稿を取得する
 
 ```json
 {}
+```
+
+- 指定したIDから32件の投稿を取得する(デフォルトは新しい方向)
+
+```json
+{
+    "post_id": 33
+}
+```
+
+- 指定したIDから時系列で新しい方向に32件の投稿を取得する
+
+```json
+{
+    "post_id": 33,
+    "type": "new"
+}
+```
+
+- 指定したIDから時系列で古い方向に32件の投稿を取得する
+
+```json
+{
+    "post_id": 33,
+    "type": "old"
+}
 ```
 
 ##### Response
@@ -284,7 +311,13 @@ GET /api/v1/user/likes
         "images": [
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
+        "user": {
+            "id": "XXXX",
+            "screen_name": "XXXX",
+            "avatar": "XXXX"
+        },
         "liked": 1,
+        "is_liked": true,
         "created_at": "XXXX",
         "updated_at": "XXXX"
     }
