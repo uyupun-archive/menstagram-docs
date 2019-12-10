@@ -5,7 +5,7 @@
 ##### Endpoint
 
 ```
-/api/v1/timeline/global
+GET /api/v1/timeline/global
 ```
 
 ##### Request
@@ -69,7 +69,7 @@
 ##### Endpoint
 
 ```
-/api/v1/timeline/private
+GET /api/v1/timeline/private
 ```
 
 ##### Request
