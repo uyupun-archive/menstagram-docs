@@ -128,6 +128,7 @@ GET /api/v1/post/detail
 ```
 
 ##### Response
+`liker` は最大５件まで取得する.
 
 ```json
 {
@@ -155,7 +156,7 @@ GET /api/v1/post/detail
 }
 ```
 
-### いいねした人一覧の取得
+### いいねしたユーザー一覧の取得
 
 ##### Endpoint
 
@@ -164,29 +165,11 @@ GET /api/v1/post/liker
 ```
 
 ##### Request
+取得件数の指定等はできず, 最新から最大100件取得する.
 
 ```json
 {
     "post_id": 1
-}
-```
-
-- 取得する範囲を指定する  
-20〜29件目までを取得する
-
-```json
-{
-    "post_id": 1,
-    "page": 2
-}
-```
-
-- 取得する個数を指定する
-
-```json
-{
-    "post_id": 1,
-    "take": 5
 }
 ```
 
@@ -195,12 +178,9 @@ GET /api/v1/post/liker
 ```json
 [
     {
-        "id": 1,
-        "user": {
-            "user_id": "XXXX",
-            "screen_name": "XXXX",
-            "avater": "XXXX"
-        }
+        "user_id": "XXXX",
+        "screen_name": "XXXX",
+        "avater": "XXXX"
     }
 ]
 ```
