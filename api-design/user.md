@@ -193,7 +193,7 @@ POST /api/v1/user/unfollow
 ##### Endpoint
 
 ```
-PATCH /api/v1/user/profile
+PATCH /api/v1/user/edit
 ```
 
 ##### Request
