@@ -52,7 +52,7 @@ GET /api/v1/timeline/global
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
         "user": {
-            "id": "XXXX",
+            "user_id": "XXXX",
             "screen_name": "XXXX",
             "avatar": "XXXX"
         },
@@ -117,7 +117,7 @@ GET /api/v1/timeline/private
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
         "user": {
-            "id": "XXXX",
+            "user_id": "XXXX",
             "screen_name": "XXXX",
             "avatar": "XXXX"
         },
