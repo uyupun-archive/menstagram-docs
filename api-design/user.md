@@ -158,7 +158,7 @@ POST /api/v1/user/follow
 
 ```json
 {
-    "user_id": "XXXX"
+    "target_user_id": "XXXX"
 }
 ```
 
@@ -178,7 +178,7 @@ POST /api/v1/user/unfollow
 
 ```json
 {
-    "user_id": "XXXX"
+    "target_user_id": "XXXX"
 }
 ```
 
