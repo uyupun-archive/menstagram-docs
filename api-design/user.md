@@ -271,7 +271,7 @@ GET /api/v1/user/following
 ]
 ```
 
-### ログインユーザーのフォロワーの取得
+### フォロワーの取得
 
 ##### Endpoint
 
