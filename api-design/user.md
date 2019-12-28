@@ -276,13 +276,11 @@ GET /api/v1/user/following
         "user_id": "XXXX",
         "screen_name": "XXXX",
         "avater": "XXXX",
-        "is_follwed": true
     },
     {
         "user_id": "XXXX",
         "screen_name": "XXXX",
         "avater": "XXXX",
-        "is_follwed": true
     }
 ]
 ```
@@ -345,13 +343,11 @@ GET /api/v1/user/followed
         "user_id": "XXXX",
         "screen_name": "XXXX",
         "avater": "XXXX",
-        "is_follwed": false
     },
     {
         "user_id": "XXXX",
         "screen_name": "XXXX",
         "avater": "XXXX",
-        "is_follwed": false
     }
 ]
 ```
