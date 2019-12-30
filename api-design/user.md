@@ -100,7 +100,15 @@ GET /api/v1/user/posts
         "images": [
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
-        "liked": 1
+        "user": {
+            "id": "XXXX",
+            "screen_name": "XXXX",
+            "avatar": "XXXX"
+        },
+        "liked": 1,
+        "is_liked": true,
+        "created_at": "XXXX",
+        "updated_at": "XXXX"
     }
 ]
 ```
