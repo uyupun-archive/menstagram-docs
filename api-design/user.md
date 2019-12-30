@@ -36,6 +36,7 @@ GET /api/v1/user/profile
     "following": 1,
     "followed": 1,
     "is_followed": false,
+    "is_me": false,
     "biography": "XXXX"
 }
 ```
