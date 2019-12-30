@@ -120,6 +120,29 @@ PATCH /api/v1/user/edit
 {}
 ```
 
+### ログインユーザーのアバターを編集する
+
+##### Endpoint
+
+```
+PATCH /api/v1/user/edit/avatar
+```
+
+##### Request
+`Content-Type` には `multipart/form-data` を指定する.
+
+```json
+{
+    "avatar": <image-data>
+}
+```
+
+##### Response
+
+```
+{}
+```
+
 ### ログインユーザーがいいねした投稿の取得
 
 ##### Endpoint
