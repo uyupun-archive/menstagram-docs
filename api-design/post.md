@@ -180,7 +180,8 @@ GET /api/v1/post/liker
     {
         "user_id": "XXXX",
         "screen_name": "XXXX",
-        "avater": "XXXX"
+        "avater": "XXXX",
+        "is_following": true
     }
 ]
 ```
