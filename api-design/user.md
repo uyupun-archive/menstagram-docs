@@ -323,11 +323,7 @@ GET /api/v1/user/following
         "user_id": "XXXX",
         "screen_name": "XXXX",
         "avater": "XXXX",
-    },
-    {
-        "user_id": "XXXX",
-        "screen_name": "XXXX",
-        "avater": "XXXX",
+        "is_me": false
     }
 ]
 ```
@@ -390,11 +386,7 @@ GET /api/v1/user/followed
         "user_id": "XXXX",
         "screen_name": "XXXX",
         "avater": "XXXX",
-    },
-    {
-        "user_id": "XXXX",
-        "screen_name": "XXXX",
-        "avater": "XXXX",
+        "is_me": false
     }
 ]
 ```
