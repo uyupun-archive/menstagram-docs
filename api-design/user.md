@@ -101,7 +101,7 @@ GET /api/v1/user/posts
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
         "user": {
-            "id": "XXXX",
+            "user_id": "XXXX",
             "screen_name": "XXXX",
             "avatar": "XXXX"
         },
@@ -211,7 +211,7 @@ GET /api/v1/user/likes
             "XXXX", "XXXX", "XXXX", "XXXX"
         ],
         "user": {
-            "id": "XXXX",
+            "user_id": "XXXX",
             "screen_name": "XXXX",
             "avatar": "XXXX"
         },
