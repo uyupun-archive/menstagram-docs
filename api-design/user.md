@@ -122,6 +122,7 @@ PATCH /api/v1/user/edit
 ```
 
 ##### Request
+`biography`は空文字でのリクエストが可能.
 
 ```json
 {
