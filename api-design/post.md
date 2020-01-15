@@ -33,10 +33,13 @@ POST /api/v1/post
 ```
 
 ##### Response
+ラーメン判定成功時は `post_id` に任意の非負整数, `is_ramen` に `true` が入ったレスポンスが返却される.  
+ラーメン判定失敗時は `post_id` に `0` , `is_ramen` に `false` が入ったレスポンスが返却される.
 
 ```json
 {
-    "post_id": 1
+    "post_id": 1,
+    "is_ramen": true
 }
 ```
 
