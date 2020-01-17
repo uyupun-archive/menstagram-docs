@@ -202,7 +202,7 @@ GET /api/v1/post/liker
 ##### Endpoint
 
 ```
-GET /api/v1/ramen/judge
+POST /api/v1/ramen/judge
 ```
 
 ##### Request
