@@ -199,4 +199,42 @@ GET /api/v1/post/liker
 
 投稿APIが内部的に使用する
 
-// TODO
+##### Endpoint
+
+```
+GET /api/v1/ramen/judge
+```
+
+##### Request
+画像は最低１枚, 最大４枚含めることができる.  
+`Content-Type` には `multipart/form-data` を指定する.
+
+- １枚のパターン
+
+```json
+{
+    "image1": <image-data>
+}
+```
+
+- ４枚のパターン
+
+```json
+{
+    "image1": <image-data>,
+    "image2": <image-data>,
+    "image3": <image-data>,
+    "image4": <image-data>
+}
+```
+
+##### Response
+
+```json
+"is_ramens": [
+    true,
+    false,
+    true,
+    false
+]
+```
