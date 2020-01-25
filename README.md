@@ -8,7 +8,7 @@ Menstagramは世界中のラーメンコミュニティを支える特化型SNS�
 |ドキュメント|概要|
 |:--|:--|
 |[philosophy.md](./philosophy.md)|このサービスを作る理由|
-|[teams.md](./teams.md)|コア開発チームとそれを構成するメンバー|
+|[members.md](./teams.md)|開発メンバー|
 |[tech.md](./tech.md)|技術選定と技術構成|
 |[flow.md](./flow.md)|ストーリーの消化手順|
 |[projects](https://github.com/orgs/uyupun/projects/1)|ストーリーボード|
