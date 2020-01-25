@@ -8,13 +8,6 @@
 
 紐付いているissueに対応するリポジトリは主に以下の４種類.
 
-|リポジトリ名|説明|
-|:--|:--|
-|[menstagram-web](https://github.com/uyupun/menstagram-web)|MenstagramのWebフロントエンド. React製|
-|[menstagram-api](https://github.com/uyupun/menstagram-api)|MenstagramのWeb API. Laravel製|
-|[menstagram-infra](https://github.com/uyupun/menstagram-infra)|Menstagramの本番環境のインフラ設定. Kubernetes製|
-|[menstagram-ai](https://github.com/uyupun/menstagram-ai)|Menstagramのラーメン判定の実装. Keras製|
-
 3. ブランチを切る
 
 `feature/XX` ( `XX` はissue番号)という名前のブランチを切る.  
