@@ -1,7 +1,11 @@
 # コアメンバー
-- [かっきー](https://github.com/NNN-kakimoto) ... プロジェクトオーナー, バックエンド/フロントエンドのヘルプ
-- [たかし](https://github.com/takashi0602) ... フロントエンドのメインコミッター
-- [かずきち](https://github.com/tyokinuhata) ... バックエンド・AIのメインコミッター
+- [かっきー](https://github.com/NNN-kakimoto)
+  - プロジェクトオーナー
+  - バックエンド・フロントエンドのヘルプ
+- [たかし](https://github.com/takashi0602)
+  - フロントエンドのメインコミッター
+- [かずきち](https://github.com/tyokinuhata)
+  - バックエンド・AIのメインコミッター
 
 # 貢献者
 - [むらとお](https://github.com/murakami1618)
