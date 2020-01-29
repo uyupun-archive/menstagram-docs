@@ -1,7 +1,9 @@
+# menstagram-docs
+
 <img src="images/logo/logo_and_text.png" width="500">
 
 **🍜 SUSURU FOREVER, SUSURU ANYWHERE 🍜**  
-Menstagramは世界中のラーメンコミュニティを支える特化型SNSです。
+menstagram-docsはMenstagramのドキュメントのリポジトリです。
 
 ### ドキュメント
 
