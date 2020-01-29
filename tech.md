@@ -54,7 +54,12 @@
 - Kubernetes
 
 ### その他
-- アジャイル開発
+- Agile
+
+その他検討中の技術
+- DevOps
+- SRE
+- GitOps
 
 # 技術構成
 
