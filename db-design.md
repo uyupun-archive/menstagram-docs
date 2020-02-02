@@ -23,7 +23,7 @@
 ### system_users
 - 管理ユーザー
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. システムによる自動割り当て|
 |screen_name|string|16|-|ユーザー表示名. 日本語可|
@@ -38,7 +38,7 @@
 ### posts
 - 投稿データ
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |user_id|unsignedBigInteger|-|references|ユーザーID|
@@ -51,7 +51,7 @@
 ### follows
 - ユーザーのフォロー
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |user_id|unsignedBigInteger|-|references|フォローするユーザーのID|
@@ -62,7 +62,7 @@
 ### likes
 - 投稿に対するいいね
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |user_id|unsignedBigInteger|-|references|いいねしたユーザーのID|
@@ -73,7 +73,7 @@
 ### system_post_checks
 - ユーザーから報告された投稿の削除
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |post_id|unsignedBigInteger|references|対象となる投稿のID|
@@ -85,7 +85,7 @@
 ### like_notices
 - いいねの通知
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |like_id|unsignedBigInteger|-|references|対象となるいいねのID|
@@ -99,7 +99,7 @@
 ### follow_notices
 - フォローの通知
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |follow_id|unsignedBigInteger|-|references|対象となるフォローのID|
@@ -112,7 +112,7 @@
 ### system_notices
 - 運営からのブロードキャスト通知の本文
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |text|string|256|-|送信内容|
@@ -122,7 +122,7 @@
 ### rejected_post_notice
 - システムによって投稿が削除されたことを通知
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. ユーザーによる変更が不可|
 |post_id|unsignedBigInteger|references|対象となる投稿のID|
@@ -133,4 +133,4 @@
 
 # ER図
 
-<img src="./images/db-design/E-Rdiagram.png" width="700">
+<img src="./images/db-design/er_diagram.png" width="700">
