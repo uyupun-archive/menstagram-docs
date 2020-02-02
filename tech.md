@@ -23,7 +23,7 @@
 |:--|:--|:--|
 |Laravel|Web API|開発メンバーがPHP/Laravelでの開発に慣れているため. できるだけRESTを心がける|
 |PHPUnit|テスト|Laravelと最も親和性の高いテストフレームワークだと感じたため|
-|MySQL|マスタDB|開発メンバーが最も慣れているRDBのため|
+|MySQL|マスタDB|Webサービスに向いたDBMSのため|
 |Redis|キャッシュ|高速な検索処理等が求められる場合にMySQLでは補えない部分を補うため|
 |nginx|Webサーバ|一般的にApacheよりもパフォーマンスが高いため|
 
