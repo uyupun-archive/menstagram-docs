@@ -19,3 +19,12 @@ menstagram-docsはMenstagramのドキュメントのリポジトリです。
 |[api_design.md](./api_design.md)|API設計|
 |[db_design.md](./db_design.md)|DB設計|
 |[terms.md](./terms.md)|用語集|
+
+### リポジトリ
+
+|リポジトリ|概要|
+|:--|:--|
+|[menstagram-web](https://github.com/uyupun/menstagram-web)|Webアプリケーション(フロントエンド)のリポジトリ|
+|[menstagram-api](https://github.com/uyupun/menstagram-api)|Web API(バックエンド)のリポジトリ|
+|[menstagram-ai](https://github.com/uyupun/menstagram-ai)|ラーメン判定APIのリポジトリ|
+|[menstagram-docs](https://github.com/uyupun/menstagram-docs)|ドキュメントのリポジトリ|
