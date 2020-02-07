@@ -28,3 +28,11 @@ menstagram-docsはMenstagramのドキュメントのリポジトリです。
 |[menstagram-api](https://github.com/uyupun/menstagram-api)|Web API(バックエンド)のリポジトリ|
 |[menstagram-ai](https://github.com/uyupun/menstagram-ai)|ラーメン判定APIのリポジトリ|
 |[menstagram-docs](https://github.com/uyupun/menstagram-docs)|ドキュメントのリポジトリ|
+
+### 素材
+
+|素材|概要|
+|:--|:--|
+|[logo](./images/logo)|ロゴ|
+|[key_visual](./images/key_visual/key_visual.jpg)|キービジュアル|
+|[default_icons](./images/default_icons/png)|ユーザーのデフォルトアイコン|
