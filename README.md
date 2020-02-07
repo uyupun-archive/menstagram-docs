@@ -35,4 +35,4 @@ menstagram-docsはMenstagramのドキュメントのリポジトリです。
 |:--|:--|
 |[logo](./images/logo)|ロゴ|
 |[key_visual](./images/key_visual/key_visual.jpg)|キービジュアル|
-|[default_icons](./images/default_icons/png)|ユーザーのデフォルトアイコン|
+|[default_avatars](./images/default_avatars/png)|ユーザーのデフォルトアバター|
