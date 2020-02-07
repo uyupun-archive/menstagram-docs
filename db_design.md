@@ -133,4 +133,4 @@
 
 # ER図
 
-<img src="./images/db-design/er_diagram.png" width="700">
+<img src="./images/db_design/er_diagram.png" width="700">
