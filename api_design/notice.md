@@ -1,26 +1,26 @@
 # 通知系API
 
-### いいね通知
+### ヤム通知
 
 ##### Endpoint
 
 ```
-GET /api/v1/notice/liked
+GET /api/v1/notice/yum
 ```
 
 ##### Request
 
-- 最新10件のいいね通知を取得する
+- 最新10件のヤム通知を取得する
 
 ```json
 {}
 ```
 
-- 指定したIDから10件のいいね通知を取得する
+- 指定したIDから10件のヤム通知を取得する
 
 ```json
 {
-    "like_notice_id": 1
+    "yum_notice_id": 1
 }
 ```
 
@@ -32,14 +32,14 @@ GET /api/v1/notice/liked
         "id": 1,
         "src_user": {
             "user_id": "XXXX",
-            "screen_name": "XXXX",
+            "user_name": "XXXX",
             "avater": "XXXX"
         },
-        "post": {
+        "slurp": {
             "id": 1,
             "image": "XXXX"
         },
-        "like": {
+        "yum": {
             "created_at": "XXXX"
         }
     }
@@ -78,7 +78,7 @@ GET /api/v1/notice/followed
         "id": 1,
         "src_user": {
             "user_id": "XXXX",
-            "screen_name": "XXXX",
+            "user_name": "XXXX",
             "avater": "XXXX"
         },
         "follow": {
@@ -98,8 +98,6 @@ GET /api/v1/notice/system
 ```
 
 ##### Request
-
-ヘッダに `Authorization: Bearer <access_token>` 形式でアクセストークンの指定が必須
 
 - 最新10件の運営からの通知を取得する
 

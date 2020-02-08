@@ -1,11 +1,11 @@
-# 投稿系API
+# スラープ系API
 
-### 画像投稿
+### スラープ
 
 ##### Endpoint
 
 ```
-POST /api/v1/post
+POST /api/v1/slurp
 ```
 
 ##### Request
@@ -33,12 +33,12 @@ POST /api/v1/post
 ```
 
 ##### Response
-ラーメン判定成功時(全ての判定に成功した場合)は `post_id` に任意の非負整数, `is_ramens` にそれぞれの判定結果が入ったレスポンスが返却される.  
-ラーメン判定失敗時(１枚でも判定に失敗した場合)は `post_id` に `0` , `is_ramens` にそれぞれの判定結果が入ったレスポンスが返却される.
+ラーメン判定成功時(全ての判定に成功した場合)は `slurp_id` に任意の非負整数, `is_ramens` にそれぞれの判定結果が入ったレスポンスが返却される.  
+ラーメン判定失敗時(１枚でも判定に失敗した場合)は `slurp_id` に `0` , `is_ramens` にそれぞれの判定結果が入ったレスポンスが返却される.
 
 ```json
 {
-    "post_id": 1,
+    "slurp_id": 1,
     "is_ramens": [
         true,
         false,
@@ -48,23 +48,23 @@ POST /api/v1/post
 }
 ```
 
-### テキスト投稿
+### スラープ(テキスト)
 
-テキストのみの投稿はできず, まずは画像投稿APIから `post_id` を得る必要がある.
+テキストのみのスラープはできず, まずはスラープAPIから `slurp_id` を得る必要がある.
 
 ##### Endpoint
 
 ```
-POST /api/v1/post/text
+POST /api/v1/slurp/text
 ```
 
 ##### Request
 
-また, `post_id` には画像投稿APIを使用して取得したIDを指定する.
+また, `slurp_id` にはスラープAPIを使用して取得したIDを指定する.
 
 ```json
 {
-    "post_id": 1,
+    "slurp_id": 1,
     "text": "XXXX"
 }
 ```
@@ -75,19 +75,19 @@ POST /api/v1/post/text
 {}
 ```
 
-### いいねする
+### ヤムする
 
 ##### Endpoint
 
 ```
-POST /api/v1/post/like
+POST /api/v1/slurp/yum
 ```
 
 ##### Request
 
 ```json
 {
-    "post_id": 1
+    "slurp_id": 1
 }
 ```
 
@@ -97,19 +97,19 @@ POST /api/v1/post/like
 {}
 ```
 
-### いいねをはずす
+### ヤムをはずす
 
 ##### Endpoint
 
 ```
-POST /api/v1/post/unlike
+POST /api/v1/slurp/unyum
 ```
 
 ##### Request
 
 ```json
 {
-    "post_id": 1
+    "slurp_id": 1
 }
 ```
 
@@ -119,24 +119,24 @@ POST /api/v1/post/unlike
 {}
 ```
 
-### 投稿詳細の取得
+### スラープ詳細の取得
 
 ##### Endpoint
 
 ```
-GET /api/v1/post/detail
+GET /api/v1/slurp/detail
 ```
 
 ##### Request
 
 ```json
 {
-    "post_id": 1
+    "slurp_id": 1
 }
 ```
 
 ##### Response
-`liker` は最大５件まで取得する.
+`yums` は最大５件まで取得する.
 
 ```json
 {
@@ -145,15 +145,15 @@ GET /api/v1/post/detail
     "images": [
         "XXXX", "XXXX", "XXXX", "XXXX"
     ],
-    "liked": 1,
-    "is_liked": true,
+    "yum_count": 1,
+    "is_yum": true,
     "user": {
         "id": 1,
         "user_id": "XXXX",
-        "screen_name": "XXXX",
+        "user_name": "XXXX",
         "avatar": "XXXX",
     },
-    "liker": [
+    "yums": [
         {
             "user_id": 1,
             "avatar": "XXXX"
@@ -164,12 +164,12 @@ GET /api/v1/post/detail
 }
 ```
 
-### いいねしたユーザー一覧の取得
+### ヤムしたユーザー一覧の取得
 
 ##### Endpoint
 
 ```
-GET /api/v1/post/liker
+GET /api/v1/slurp/yums
 ```
 
 ##### Request
@@ -177,7 +177,7 @@ GET /api/v1/post/liker
 
 ```json
 {
-    "post_id": 1
+    "slurp_id": 1
 }
 ```
 
@@ -187,9 +187,9 @@ GET /api/v1/post/liker
 [
     {
         "user_id": "XXXX",
-        "screen_name": "XXXX",
+        "user_name": "XXXX",
         "avater": "XXXX",
-        "is_following": true,
+        "is_follow": true,
         "is_me": false
     }
 ]
@@ -197,7 +197,7 @@ GET /api/v1/post/liker
 
 ### ラーメン判定
 
-投稿APIが内部的に使用する
+スラープAPIが内部的に使用する
 
 ##### Endpoint
 

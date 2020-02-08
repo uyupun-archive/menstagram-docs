@@ -14,7 +14,7 @@ POST /api/v1/auth/register
 ```json
 {
     "user_id": "XXXXX",
-    "screen_name": "XXXXX",
+    "user_name": "XXXXX",
     "email": "XXXXX",
     "password": "XXXXX"
 }

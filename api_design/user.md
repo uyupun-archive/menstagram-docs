@@ -32,31 +32,31 @@ GET /api/v1/user/profile
     "avatar": "XXXX",
     "screen_name": "XXXX",
     "user_id": "XXXX",
-    "posted": 1,
-    "following": 1,
-    "followed": 1,
-    "is_followed": false,
+    "slurp_count": 1,
+    "follow_count": 1,
+    "follower_count": 1,
+    "is_follow": false,
     "is_me": false,
     "biography": "XXXX"
 }
 ```
 
-### ユーザーの投稿の取得
+### ユーザーのスラープの取得
 
 ##### Endpoint
 
 ```
-GET /api/v1/user/posts
+GET /api/v1/user/slurps
 ```
 
 ##### Request
-- 最新から100件の投稿を取得する
+- 最新から100件のスラープを取得する
 
 ```json
 {}
 ```
 
-- 指定したユーザーIDの投稿を取得する
+- 指定したユーザーIDのスラープを取得する
 
 ```json
 {
@@ -64,28 +64,28 @@ GET /api/v1/user/posts
 }
 ```
 
-- 指定したIDから100件の投稿を取得する(デフォルトは新しい方向)
+- 指定したIDから100件のスラープを取得する(デフォルトは新しい方向)
 
 ```json
 {
-    "post_id": 101
+    "slurp_id": 101
 }
 ```
 
-- 指定したIDから時系列で新しい方向に100件の投稿を取得する
+- 指定したIDから時系列で新しい方向に100件のスラープを取得する
 
 ```json
 {
-    "post_id": 101,
+    "slurp_id": 101,
     "type": "new"
 }
 ```
 
-- 指定したIDから時系列で古い方向に100件の投稿を取得する
+- 指定したIDから時系列で古い方向に100件のスラープを取得する
 
 ```json
 {
-    "post_id": 101,
+    "slurp_id": 101,
     "type": "old"
 }
 ```
@@ -102,11 +102,11 @@ GET /api/v1/user/posts
         ],
         "user": {
             "user_id": "XXXX",
-            "screen_name": "XXXX",
+            "user_name": "XXXX",
             "avatar": "XXXX"
         },
-        "liked": 1,
-        "is_liked": true,
+        "yum_count": 1,
+        "is_yum": true,
         "created_at": "XXXX",
         "updated_at": "XXXX"
     }
@@ -126,7 +126,7 @@ PATCH /api/v1/user/edit
 
 ```json
 {
-    "screen_name": "XXXX",
+    "user_name": "XXXX",
     "biography": "XXXX"
 }
 ```
@@ -160,43 +160,43 @@ PATCH /api/v1/user/edit/avatar
 {}
 ```
 
-### ログインユーザーがいいねした投稿の取得
+### ログインユーザーがヤムしたスラープの取得
 
 ##### Endpoint
 
 ```
-GET /api/v1/user/likes
+GET /api/v1/user/yums
 ```
 
 ##### Request
-- 最新から10件の投稿を取得する
+- 最新から10件のスラープを取得する
 
 ```json
 {}
 ```
 
-- 指定したIDから10件の投稿を取得する(デフォルトは新しい方向)
+- 指定したIDから10件のスラープを取得する(デフォルトは新しい方向)
 
 ```json
 {
-    "post_id": 11
+    "slurp_id": 11
 }
 ```
 
-- 指定したIDから時系列で新しい方向に10件の投稿を取得する
+- 指定したIDから時系列で新しい方向に10件のスラープを取得する
 
 ```json
 {
-    "post_id": 11,
+    "slurp_id": 11,
     "type": "new"
 }
 ```
 
-- 指定したIDから時系列で古い方向に10件の投稿を取得する
+- 指定したIDから時系列で古い方向に10件のスラープを取得する
 
 ```json
 {
-    "post_id": 11,
+    "slurp_id": 11,
     "type": "old"
 }
 ```
@@ -213,11 +213,11 @@ GET /api/v1/user/likes
         ],
         "user": {
             "user_id": "XXXX",
-            "screen_name": "XXXX",
+            "user_name": "XXXX",
             "avatar": "XXXX"
         },
-        "liked": 1,
-        "is_liked": true,
+        "yum_count": 1,
+        "is_yum": true,
         "created_at": "XXXX",
         "updated_at": "XXXX"
     }
@@ -271,7 +271,7 @@ POST /api/v1/user/unfollow
 ##### Endpoint
 
 ```
-GET /api/v1/user/following
+GET /api/v1/user/follow
 ```
 
 ##### Request
@@ -290,7 +290,7 @@ GET /api/v1/user/following
 }
 ```
 
-- 指定したIDから10件の投稿を取得する(デフォルトは新しい方向)
+- 指定したIDから10件のスラープを取得する(デフォルトは新しい方向)
 
 ```json
 {
@@ -298,7 +298,7 @@ GET /api/v1/user/following
 }
 ```
 
-- 指定したIDから時系列で新しい方向に10件の投稿を取得する
+- 指定したIDから時系列で新しい方向に10件のスラープを取得する
 
 ```json
 {
@@ -307,7 +307,7 @@ GET /api/v1/user/following
 }
 ```
 
-- 指定したIDから時系列で古い方向に10件の投稿を取得する
+- 指定したIDから時系列で古い方向に10件のスラープを取得する
 
 ```json
 {
@@ -322,9 +322,9 @@ GET /api/v1/user/following
 [
     {
         "user_id": "XXXX",
-        "screen_name": "XXXX",
+        "user_name": "XXXX",
         "avater": "XXXX",
-        "is_following": false,
+        "is_follow": false,
         "is_me": false
     }
 ]
@@ -335,7 +335,7 @@ GET /api/v1/user/following
 ##### Endpoint
 
 ```
-GET /api/v1/user/followed
+GET /api/v1/user/follower
 ```
 
 ##### Request
@@ -354,7 +354,7 @@ GET /api/v1/user/followed
 }
 ```
 
-- 指定したIDから10件の投稿を取得する(デフォルトは新しい方向)
+- 指定したIDから10件のスラープを取得する(デフォルトは新しい方向)
 
 ```json
 {
@@ -362,7 +362,7 @@ GET /api/v1/user/followed
 }
 ```
 
-- 指定したIDから時系列で新しい方向に10件の投稿を取得する
+- 指定したIDから時系列で新しい方向に10件のスラープを取得する
 
 ```json
 {
@@ -371,7 +371,7 @@ GET /api/v1/user/followed
 }
 ```
 
-- 指定したIDから時系列で古い方向に10件の投稿を取得する
+- 指定したIDから時系列で古い方向に10件のスラープを取得する
 
 ```json
 {
@@ -386,9 +386,9 @@ GET /api/v1/user/followed
 [
     {
         "user_id": "XXXX",
-        "screen_name": "XXXX",
+        "user_name": "XXXX",
         "avater": "XXXX",
-        "is_following": false,
+        "is_follow": false,
         "is_me": false
     }
 ]
