@@ -3,14 +3,14 @@
 ### usres
 - 一般ユーザー
 
-|カラム名|型|長さ|属性|説明|
+|カラム名|型|長さ|制約|説明|
 |:--|:--|:--|:--|:--|
 |id|bigIncrements|-|primary|数値のID. システムによる自動割り当て|
 |user_id|string|16|unique|ユーザーが任意に設定できるID. 半角英数字のみ|
 |screen_name|string|16|-|ユーザー表示名. 日本語可|
 |email|string|256|unique|ユーザーのメールアドレス|
 |password|string|-|nullable|bcryptによってハッシュ化されたパスワード|
-|avatar|string|-|default(デフォルトアイコンのパス)|ユーザーのアイコン画像のパス|
+|avatar|string|-|-|ユーザーのアイコン画像のパス|
 |biography|string|128|nullable|ユーザーの自己紹介欄|
 |access_token|string|-|nullable|アクセストークン|
 |posted|unsignedBigInteger|-|default(0)|投稿数|
