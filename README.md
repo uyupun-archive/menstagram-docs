@@ -9,7 +9,7 @@ menstagram-docsはMenstagramのドキュメントのリポジトリです。
 
 |ドキュメント|概要|
 |:--|:--|
-|[philosophy.md](./philosophy.md)|このサービスがなんなのか、なんのために作るのか|
+|[intro.md](./intro.md)|サービスの説明|
 |[members.md](./members.md)|開発メンバー|
 |[tech.md](./tech.md)|技術選定と技術構成|
 |[flow.md](./flow.md)|ストーリーの消化手順|
