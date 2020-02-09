@@ -5,7 +5,7 @@
 ##### Endpoint
 
 ```
-GET /api/v1/notice/yum
+GET /api/v1/notice/yummed
 ```
 
 ##### Request
