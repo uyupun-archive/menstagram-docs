@@ -9,4 +9,4 @@
 |<div style="width: 10px; height: 10px; background: #ff0000"></div>|`#ff0000`|エラーテキスト|
 
 # フォント
-- [Billabong](https://allbestfonts.com/shrift-billabong/)
+- [Billabong](https://www.cufonfonts.com/font/billabong)
