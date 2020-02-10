@@ -1,13 +1,13 @@
 # コアメンバー
-- [かっきー](https://github.com/NNN-kakimoto)
+- [かっきー(@NNN-kakimoto)](https://github.com/NNN-kakimoto)
   - プロジェクトオーナー
   - バックエンド・フロントエンドのヘルプ
-- [たかし](https://github.com/takashi0602)
+- [たかし(@takashi0602)](https://github.com/takashi0602)
   - フロントエンドのメインコミッター
-- [かずきち](https://github.com/tyokinuhata)
+- [かずきち(@tyokinuhata)](https://github.com/tyokinuhata)
   - バックエンド・AIのメインコミッター
 
 # 貢献者
-- [むらとお](https://github.com/murakami1618)
-- [スズキ](https://github.com/suzuking1125)
-- [マル](https://github.com/b7026)
+- [むらとお(@murakami1618)](https://github.com/murakami1618)
+- [スズキ(@suzuking1125)](https://github.com/suzuking1125)
+- [マル(@b7026)](https://github.com/b7026)

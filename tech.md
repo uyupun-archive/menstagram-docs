@@ -54,6 +54,7 @@
 - Kubernetes
 
 ### その他
+- Illustrator
 - Agile
 
 その他検討中の技術
