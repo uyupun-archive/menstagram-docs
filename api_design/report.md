@@ -12,7 +12,7 @@ POST /api/v1/report/not-ramen
 
 ```json
 {
-    "post_id": "XXXX"
+    "slurp_id": "XXXX"
 }
 ```
 

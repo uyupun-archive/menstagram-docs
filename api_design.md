@@ -4,7 +4,7 @@
 
 - [認証系API](./api_design/auth.md)
 - [ユーザー系API](./api_design/user.md)
-- [投稿系API](./api_design/post.md)
+- [スラープ系API](./api_design/slurp.md)
 - [タイムライン系API](./api_design/timeline.md)
 - [通知系API](./api_design/notice.md)
 - [報告系API](./api_design/report.md)
