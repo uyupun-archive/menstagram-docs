@@ -142,7 +142,7 @@ PATCH /api/v1/user/edit
 ##### Endpoint
 
 ```
-PATCH /api/v1/user/edit/avatar
+PUT /api/v1/user/edit/avatar
 ```
 
 ##### Request
