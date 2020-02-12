@@ -30,7 +30,7 @@ GET /api/v1/user/profile
 {
     "id": 1,
     "avatar": "XXXX",
-    "screen_name": "XXXX",
+    "user_name": "XXXX",
     "user_id": "XXXX",
     "slurp_count": 1,
     "follow_count": 1,
