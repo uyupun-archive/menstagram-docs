@@ -27,6 +27,7 @@ menstagram-docsはMenstagramのドキュメントのリポジトリです。
 |[menstagram-web](https://github.com/uyupun/menstagram-web)|Webアプリケーション(フロントエンド)のリポジトリ|
 |[menstagram-api](https://github.com/uyupun/menstagram-api)|Web API(バックエンド)のリポジトリ|
 |[menstagram-ai](https://github.com/uyupun/menstagram-ai)|ラーメン判定APIのリポジトリ|
+|[menstagram-monitor](https://github.com/uyupun/menstagram-monitor)|モニタリングのリポジトリ|
 |[menstagram-docs](https://github.com/uyupun/menstagram-docs)|ドキュメントのリポジトリ|
 
 ### 素材
