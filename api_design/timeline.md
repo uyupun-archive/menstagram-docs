@@ -15,28 +15,28 @@ GET /api/v1/timeline/global
 {}
 ```
 
-- 指定したIDから10件の投稿を取得する(デフォルトは新しい方向)
+- 指定したIDから10件のスラープを取得する(デフォルトは新しい方向)
 
 ```json
 {
-    "post_id": 11
+    "slurp_id": 11
 }
 ```
 
-- 指定したIDから時系列で新しい方向に10件の投稿を取得する
+- 指定したIDから時系列で新しい方向に10件のスラープを取得する
 
 ```json
 {
-    "post_id": 11,
+    "slurp_id": 11,
     "type": "new"
 }
 ```
 
-- 指定したIDから時系列で古い方向に10件の投稿を取得する
+- 指定したIDから時系列で古い方向に10件のスラープを取得する
 
 ```json
 {
-    "post_id": 11,
+    "slurp_id": 11,
     "type": "old"
 }
 ```
@@ -53,11 +53,11 @@ GET /api/v1/timeline/global
         ],
         "user": {
             "user_id": "XXXX",
-            "screen_name": "XXXX",
+            "user_name": "XXXX",
             "avatar": "XXXX"
         },
-        "liked": 1,
-        "is_liked": true,
+        "yum_count": 1,
+        "is_yum": true,
         "created_at": "XXXX",
         "updated_at": "XXXX"
     }
@@ -74,34 +74,34 @@ GET /api/v1/timeline/private
 
 ##### Request
 
-- 最新から10件の投稿を取得する
+- 最新から10件のスラープを取得する
 
 ```json
 {}
 ```
 
-- 指定したIDから10件の投稿を取得する(デフォルトは新しい方向)
+- 指定したIDから10件のスラープを取得する(デフォルトは新しい方向)
 
 ```json
 {
-    "post_id": 11
+    "slurp_id": 11
 }
 ```
 
-- 指定したIDから時系列で新しい方向に10件の投稿を取得する
+- 指定したIDから時系列で新しい方向に10件のスラープを取得する
 
 ```json
 {
-    "post_id": 11,
+    "slurp_id": 11,
     "type": "new"
 }
 ```
 
-- 指定したIDから時系列で古い方向に10件の投稿を取得する
+- 指定したIDから時系列で古い方向に10件のスラープを取得する
 
 ```json
 {
-    "post_id": 11,
+    "slurp_id": 11,
     "type": "old"
 }
 ```
@@ -118,11 +118,11 @@ GET /api/v1/timeline/private
         ],
         "user": {
             "user_id": "XXXX",
-            "screen_name": "XXXX",
+            "user_name": "XXXX",
             "avatar": "XXXX"
         },
-        "liked": 1,
-        "is_liked": true,
+        "yum_count": 1,
+        "is_yum": true,
         "created_at": "XXXX",
         "updated_at": "XXXX"
     }
