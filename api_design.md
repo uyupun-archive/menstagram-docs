@@ -8,4 +8,4 @@
 - [タイムライン系API](./api_design/timeline.md)
 - [通知系API](./api_design/notice.md)
 - [報告系API](./api_design/report.md)
-- [失敗時のステータス](./api_design/failure.md)
+- [エラー時の動作](./api_design/error.md)
