@@ -266,23 +266,23 @@ POST /api/v1/user/unfollow
 {}
 ```
 
-### ユーザーのフォローの取得
+### ユーザーのフォロイーの取得
 
 ##### Endpoint
 
 ```
-GET /api/v1/user/follow
+GET /api/v1/user/followee
 ```
 
 ##### Request
 
-- ログインユーザーのフォロー一覧の取得
+- ログインユーザーのフォロイー一覧の取得
 
 ```json
 {}
 ```
 
-- 指定したユーザーのフォロー一覧の取得
+- 指定したユーザーのフォロイー一覧の取得
 
 ```json
 {

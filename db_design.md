@@ -14,7 +14,7 @@
 |biography|string|128|nullable|ユーザーの自己紹介欄|
 |access_token|string|-|nullable|アクセストークン|
 |slurp_count|unsignedBigInteger|-|default(0)|スラープ数|
-|follow_count|unsignedBigInteger|-|default(0)|フォロー数|
+|followee_count|unsignedBigInteger|-|default(0)|フォロイー数|
 |follower_count|unsignedBigInteger|-|default(0)|フォロワー数|
 |deleted_at|softDeletes|-|-|退会した日付(論理削除)|
 |created_at|timestamps|-|-|作成された日付. Laravelによってデフォルトで生成される|
